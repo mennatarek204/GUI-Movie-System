@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg12thproject.AddMovie">
+    <children>
+        <ImageView fitHeight="899.0" fitWidth="1282.0" layoutX="-85.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@ImageScenes/Cinema_Background.jpg" />
+            </image>
+        </ImageView>
+      <Pane layoutX="30.0" layoutY="245.0" opacity="0.61" prefHeight="410.0" prefWidth="1050.0" style="-fx-background-color: #000000;" />
+      <Button fx:id="BtShowMovie" layoutX="895.0" layoutY="831.0" mnemonicParsing="false" onAction="#DisplayMovieList" prefHeight="31.0" prefWidth="187.0" text="Show Movie List">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtMovieName" layoutX="211.0" layoutY="345.0" />
+      <TextField fx:id="txtCode" layoutX="242.0" layoutY="518.0" />
+      <TextField fx:id="txtDate" layoutX="461.0" layoutY="345.0" />
+      <Label fx:id="name" layoutX="211.0" layoutY="297.0" text="Movie name" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="code" layoutX="242.0" layoutY="476.0" text="Code" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="461.0" layoutY="297.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btback" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="39.0" prefWidth="94.0" text="&lt;" />
+      <TextField fx:id="txtTime" layoutX="529.0" layoutY="518.0" />
+      <Label fx:id="time" layoutX="529.0" layoutY="480.0" text="Time" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="716.0" layoutY="293.0" text="price" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPrice" layoutX="716.0" layoutY="345.0" />
+      <Button fx:id="BtSubmit" layoutX="895.0" layoutY="779.0" mnemonicParsing="false" onAction="#Submit" prefHeight="31.0" prefWidth="187.0" text="Submit">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
